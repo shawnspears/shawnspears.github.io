@@ -1,0 +1,79 @@
+body {
+	margin:0;
+}
+header {
+	margin-bottom: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 25px;
+}
+header h1 {
+	font-family: Roboto;
+	font-size: 24px;
+	display: inline-block;
+	float:left;
+	margin: 0;
+}
+nav ul {
+	font-family: Lora;
+	display: inline;
+}
+nav li {
+	display: inline;
+	margin-right: 25px;
+	float:right;
+}
+a:link {
+	text-decoration: none;
+	color:Gainsboro;
+}
+a:hover {
+	color:lightCoral;
+}
+a:visited  {
+	color:lightCoral;
+}
+div {
+	position: relative;
+	display: block;
+	background-color: #fafafa;
+	height: 200px;
+	width: 100%;
+}
+div img {
+	position: absolute;
+	top: 5%;
+	left: 45%;
+}
+div span {
+	text-align: center;
+	position: absolute;
+	bottom:10%;
+    left: 25%;
+    right: 25%;
+    font-family: Roboto;
+}
+article {
+	font-family: Lora;
+	margin: 50px;
+}
+article h2 {
+	font-family:Roboto;
+}
+footer {
+	color: Gainsboro;
+	font-family: Lora;
+	font-size: 12px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.logo {
+	float: right;
+	margin-right: 20px;
+}
+hr{
+    border: 0;
+    border-top: 1px solid Gainsboro;
+    margin: 1em;
+}
+
