@@ -21,7 +21,7 @@ header h1 {
 	color:black;
 }
 nav ul {
-	font-family: Lora;
+	font-family: Roboto;
 	display: inline;
 }
 nav li {
@@ -33,23 +33,23 @@ a:link {
 	text-decoration: none;
 	color:Gray;
 }
-a:hover {
-	color:lightCoral;
-}
 a:visited  {
 	color:Gray;
+}
+a:hover {
+	color:LightCoral;
 }
 div {
 	position: relative;
 	display: block;
 	background-color: #fafafa;
 	height: 200px;
-	width: 100%;
+	width: 100%
 }
 div img {
 	position: absolute;
 	top: 5%;
-	left: 45%;
+	left: 43%;
 }
 div span {
 	text-align: center;
@@ -60,15 +60,16 @@ div span {
     font-family: Roboto;
 }
 article {
-	font-family: Lora;
+	font-family: Merriweather;
 	margin: 50px;
+	font-size: 14px;
 }
 article h2 {
 	font-family:Roboto;
 }
 footer {
 	color: Gainsboro;
-	font-family: Lora;
+	font-family: Merriweather;
 	font-size: 12px;
 	margin-left: 50px;
 	margin-right: 50px;
