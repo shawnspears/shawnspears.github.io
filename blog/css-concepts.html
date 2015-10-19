@@ -35,11 +35,11 @@
         Yes, I know, the W3 school's article on the topic sums it up fairly nicely honestly. In case you missed it though, it covers a pretty important concept in CSS referred to as the Box Model, which may make your life easier when implementing a design for your webpage.
       </p>
       <p>
-        The Box Model is a fairly simple concept: all HTML elements can be thought of as boxes. As the above diagram suggests, each elements contains some kind of content, and the circumference of the element box is defined by the border. The spaces adjacent to the border are defined by the margin and padding. Here are some quick defintiions to get it down:
+        The Box Model is a fairly simple concept: all HTML elements can be thought of as boxes. As the above diagram suggests, each elements contains some kind of content, and the perimeter of the element box is defined by the border. The spaces adjacent to the border are defined by the margin and padding. Here are some quick defintiions to get it down:
       </p>
       <p>
         <ul>
-          <li>Border: The circumference around the element is referred to as the border, which separates one element from another. This property can be given a few different values, as technically it can be given a designated width, style, and color.</li>
+          <li>Border: The perimeter around the element is referred to as the border, which separates one element from another. This property can be given a few different values, as technically it can be given a designated width, style, and color.</li>
           <li>Padding: The space in between the content and the border. Unlike the border, the padding transparent.</li>
           <li>Margin: The space in between the border and the adjacent element. Similarly to the padding, the margin is also transparent and can only be defined as a length. </li>
         </ul>
@@ -56,7 +56,7 @@
       <p> Pretty sure that looks like a happy button. But what about an example on margin?</p>
       <img class="example3" src="./../imgs/example3.png" alt="Example" />
       <p> 
-        So here's my footer in Chrome's Dev Tool. Why did I give it a margin as opposed to a padding? Honestly if I slapped padding-right instead, it wouldn't have changed anything visually. Thinking about the design conceptually however, and going back to  the Box Model, I would prefer that the border of the element to surround the logo as close to the actual circumference of the logo as possible. If you think about it, if padding was applied instead, that's essentially saying "Increase the space in between the content of the element (the logo) and its border (the imaginary box around it)" Thus, the img would be clickable 20px to the right of the logo (or whatever value you gave it). Silly right? It's best to avoid confusing users by giving them invisible portions of your site to click. 
+        So here's my footer in Chrome's Dev Tool. Why did I give it a margin as opposed to a padding? Honestly if I slapped padding-right instead, it wouldn't have changed anything visually. Thinking about the design conceptually however, and going back to  the Box Model, I would prefer that the border of the element to surround the logo as close to the actual perimeter of the logo as possible. If you think about it, if padding was applied instead, that's essentially saying "Increase the space in between the content of the element (the logo) and its border (the imaginary box around it)" Thus, the img would be clickable 20px to the right of the logo (or whatever value you gave it). Silly right? It's best to avoid confusing users by giving them invisible portions of your site to click. 
       </p>
       <p> 
         Hope that clears up a few things on what is already a fairly simple concept. Hopefully this can help you better visualize a better way to implement a design you were thinking of, or improve the aesthetics of your site!
