@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Shawn Spears
+  </title>
+  <link href="./../stylesheets/default.css" type="text/css" rel="stylesheet" />
+  <link href="./../stylesheets/blog.css" type="text/css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300|Merriweather:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+    <h1 id="title"><a href="./../index.html">Shawn Spears</a></h1>
+    <nav>
+      <ul>
+          <li> <a href="index.html">Blog</a> </li>
+            <li> <a href="#">Projects</a> </li>
+            <li> <a href="#">Contact</a> </li>
+            <li> <a href="#">About</a> </li>
+        </ul>
+    </nav>
+  </header>
+  <article>
+    <hgroup>
+      <h1>Phase 0: Week 4</h1>
+      <h2>Arrays, Hashes, Literature Suggestions...</h2>
+      <h3>October 26th, 2015</h3>
+    </hgroup>
+      <h3>[Arrays!]</h3>
+      <p>
+        We all love lists. It makes us feel organized. Making a list makes us feel like we accomplised something even if we did absolutely nothing productive that day (does Netflix count as productive?). We're only human after all.
+      </p>
+      <p>
+        Now you're asking me, what in the world does this have to do with programming? Well feast your eyes on THIS.
+      </p>
+      <img class="example" src="./../imgs/arrays/array.png" alt="Array" />
+      <p>
+        At this point perhaps you've think I've gone mad. Have I intentionally given you a list of book reviews that aren't associated with anything? Will this be a fantastically entertaining guessing game for you? Perhaps. (FORESHADOWING!) I'm sure it was more likely, however, that you realized how incredibly efficient it was to stick these 3 values into a list, and thus eliminating the need to create 3 different variables for each review. How inefficient that would have been, creating a variable called bookreview_1, bookreview_2, and so on. That is the beauty of an array, which is exactly what is pictured above. An array contains a list of values contained within square brackets, and is normally given a name that describes its contents. In this case we have a list of book reviews.
+      </p>
+      <p>
+        There are a number of <a href="http://ruby-doc.org/core-2.2.0/Array.html">methods</a> that can be assigned to arrays, which is incredibly useful in manipulating the data that is stored within the list. How does one retrieve a value from the list, you ask? You simply call for the value's corresponding index within the array. The first value in the list corresponds to index 0, the second to index 1, and the third to index 3. As you may have noticed, this is a zero-based numbering sequence, where the first value corresponds to 0 instead of 1.
+      </p>
+      <img class="example3" src="./../imgs/arrays/indices.png" alt="Indices" />
+      <h3>{Hashes!}</h3>
+      <p> 
+        So, what exactly do hashes do if arrays are so efficient? Well, as you may or may not have noticed, predicting what book was associated with each of the reviews must have been slighty difficult. You may have guessed "Hamlet", "The Fellowship of the Ring", "Fifty Shades of Grey", in which case I definitely agree, but unfortunately you are incorrect. What if I wanted to have another piece of information stored with my value? That is where hashes come in.
+      </p>
+      <img class="example2" src="./../imgs/arrays/hash.png" alt="Hash" />
+      <p>I'm so sorry if you actually enjoyed Twilight. No judgement, really. Sparkling vampires just aren't my thing.</p>
+      <p> 
+        Hashes are made up of a list of key/value pairs. The keys in this case are books, and the values their respective book reviews. Instead of accessing the values in the list through indices, you can think of a key as a kind of customized index that you name to give its more specificity. So say you want to return the value from a hash: you would use that key? Oh, so you forgot what my review was on Twilight, huh?
+      </p>
+      <img class="example3" src="./../imgs/arrays/review.png" alt="Twilight Review" />
+      <p>Hope this quick review on the differences between arrays and hashes was helpful. Come back for updated information, and more blog posts to come!</p>
+  </article>
+  <hr >
+  <article>
+    <hgroup>  
+      <h2>Blog Archive</h2>
+      </hgroup>
+      <ul>
+        <li> <a href="git.html">Week 1: The Command Line and Git/GitHub</a> </li>
+        <li> <a href="css-concepts.html">Week 3: Border, Margin, + Padding</a> </li>
+        <li> <a href="arrays-hashes.html">Week 4: Arrays, Hashes, Literature Suggestions...</a> </li>
+      </ul>
+  </article>
+  <footer id="blogfooter">
+    <hr >
+    Copyright &copy; 2015 Shawn Spears
+      <a href="#"><img class="logo" src="./../imgs/icons/facebook.png" alt="Facebook logo" height="28px" width="28px" /></a>
+      <a href="#"><img class="logo" src="./../imgs/icons/twitter.png" alt="Twitter logo" height="28px" width="28px" /></a>
+      <a href="https://github.com/shawnspears"><img class="logo" src="./../imgs/icons/github.png" alt="Github logo" height="28px" width="28px" /></a>
+      <a href="#"><img class="logo" src="./../imgs/icons/linkedin.png" alt="LinkedIn logo" height="28px" width="28px" /></a>
+  </footer>
+</body>
+</html>
