@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Shawn Spears
+  </title>
+  <link href="./../stylesheets/default.css" type="text/css" rel="stylesheet" />
+  <link href="./../stylesheets/blog.css" type="text/css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300|Merriweather:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+    <h1 id="title"><a href="./../index.html">Shawn Spears</a></h1>
+    <nav>
+      <ul>
+          <li> <a href="index.html">Blog</a> </li>
+            <li> <a href="#">Projects</a> </li>
+            <li> <a href="#">Contact</a> </li>
+            <li> <a href="#">About</a> </li>
+        </ul>
+    </nav>
+  </header>
+  <article>
+    <hgroup>
+      <h1>Phase 0: Week 5</h1>
+      <h2>Enumerable Methods ... with a side of cranberry sauce.</h2>
+      <h3>November 2nd, 2015</h3>
+    </hgroup>
+      <p>
+        Honestly what other purpose does cranberry sauce even have outside of November?
+      </p>
+      <p>
+        It IS that time of year, friends, which officially means that everyone starts aggresively playing Christmas songs. What I personally am looking forward to, is the Thanksgiving dinner I have planned with my friends! We've had this planned for a while now:
+      </p>
+      <img class="example2" src="./../imgs/enumerable/thanksgiving.png" alt="Hash" />
+      <p>
+        You have a lot of questions: Why isn't this any of this real Thanksgiving food? Why are your only friends all guys? Seriously you included cranberry sauce in your title and its not even on the list? You are right to have these questions, but looks like you forgot the most poignant question of all...
+      </p>
+      <p>
+        This hash only has four people so this is a fairly simplified example, but in case you didn't notice, two people are assigned to the same value "bread". Now this would be fantastic if we were purposely trying to have the worst Thanksgiving in existence, but we are trying to make this work. Now lets also think if we had a data structure filled with a LOT more data -- like hypothetically if I were a lot more popular (or just mass invited all of my acquaintances on Facebook because lazy) there would be several more keys in the hash with associated values that indicated the food that they were planning on bringing. Now here is another hypothetical question within the alternate universe where I'm popular: How would I be able to quickly check if more than one person was bringing the same dish? Ahh yes, I knew the title of this post didn't completely go to waste.
+      </p>
+      <img class="example" src="./../imgs/enumerable/groupby.png" alt="group_by" />
+      <h3>#group_by</h3>
+      <p> 
+        The enumerable method group_by {|obj| block} groups the data in the hash via the result of the block. In this case I've simply grouped it by food to very clearly show who is bringing what. The output below shows that the group_by method returns a hash in which the keys are the result from whatever you had indicated in the block (in my case, food) and the values are the arrays of key/value pairs that make up the hash (thanksgiving_dinner). Ah yes, that's much more convenient. I can now CLEARLY see that Legolas and Peeta are both bringing bread! 
+      </p>
+      <img class="example4" src="./../imgs/enumerable/output.png" alt="Output" />
+      <p>Perhaps I should tell one of them to bring the cranberry sauce?</p>
+      <p> 
+        I know this was an incredibly simplified example because I literally created five keys, but I can only imagine the ways in which grouping data would be advantageous to certain programs. For example, I could have taken everyone's names and distance off of Tinder and grouped by their distance in order to find who was closest to me. Not sure that I could handle an LDR.
+      </p>
+      <p>That's all for now on this particular enumerable method. I'm sure I'll be covering more of them later in the future so check back soon for updates! Happy Thanksgiving in advance!</p>
+  </article>
+  <hr >
+  <article>
+    <hgroup>  
+      <h2>Blog Archive</h2>
+      </hgroup>
+      <ul>
+        <li> <a href="git.html">Week 1: The Command Line and Git/GitHub</a> </li>
+        <li> <a href="css-concepts.html">Week 3: Border, Margin, + Padding</a> </li>
+        <li> <a href="arrays-hashes.html">Week 4: Arrays, Hashes, Literature Suggestions...</a> </li>
+        <li> <a href="enumerable-methods.html">Week 5: Enumerable Methods ... with a side of cranberry sauce.</a> </li>
+      </ul>
+  </article>
+  <footer id="blogfooter">
+    <hr >
+    Copyright &copy; 2015 Shawn Spears
+      <a href="#"><img class="logo" src="./../imgs/icons/facebook.png" alt="Facebook logo" height="28px" width="28px" /></a>
+      <a href="#"><img class="logo" src="./../imgs/icons/twitter.png" alt="Twitter logo" height="28px" width="28px" /></a>
+      <a href="https://github.com/shawnspears"><img class="logo" src="./../imgs/icons/github.png" alt="Github logo" height="28px" width="28px" /></a>
+      <a href="#"><img class="logo" src="./../imgs/icons/linkedin.png" alt="LinkedIn logo" height="28px" width="28px" /></a>
+  </footer>
+</body>
+</html>
