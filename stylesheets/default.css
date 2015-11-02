@@ -92,6 +92,11 @@ hr {
     top: 20%;
     left: 20%;
 }
+.octocat2 {
+	position: absolute;
+    top: 20%;
+    left: 15%;
+}
 .divtitle {
 	font-size: 3em;
 	text-align: center;
@@ -111,8 +116,25 @@ hr {
     font-family: Roboto;
     display: inline;
  }
+ .button2 {
+	width: 55px;
+	height: 20px;
+	border: 1px solid black;
+	padding: 3px;
+	position: absolute;
+    top: 50%;
+    left: 75%;
+    font-family: Roboto;
+    display: inline;
+ }
 .button a:link {
 	color:black;
 }
 .button a:visited {
+	color:black;
+}
+.button2 a:link {
+	color:black;
+}
+.button2 a:visited {
 	color:black;
