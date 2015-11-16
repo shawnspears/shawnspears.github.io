@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Shawn Spears
+  </title>
+  <link href="./../stylesheets/default.css" type="text/css" rel="stylesheet" />
+  <link href="./../stylesheets/blog.css" type="text/css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300|Merriweather:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+    <h1 id="title"><a href="./../index.html">Shawn Spears</a></h1>
+    <nav>
+      <ul>
+          <li> <a href="index.html">Blog</a> </li>
+            <li> <a href="#">Projects</a> </li>
+            <li> <a href="contact.html">Contact</a> </li>
+            <li> <a href="#">About</a> </li>
+        </ul>
+    </nav>
+  </header>
+  <article>
+    <hgroup>
+      <h1>Phase 0: Week 7</h1>
+      <h2>Accio Loop!!</h2>
+      <h3>November 16nd, 2015</h3>
+    </hgroup>
+      <p>
+        This will be a short one you guys, I just thought that you might want to learn about some of the distinct differences in looping between Ruby and JavaScript. Or perhaps you're just studying for your Charms class and need to loop through your spells really quickly. Obviously my targeted audience is either/or.
+      </p>
+      <p>So, let's say that you have the following list of spells:</p>
+      <pre>
+        var spells = ["Wingardium Leviosa", "Accio", "Stupefy", "Expecto Patronum", "Obliviate"]
+      </pre>
+      <p>Theoretically we know that this is a JavaScript array as it defines the variable spells and assigns it to an array. The array in Ruby would look exactly the same except you could just drop the "var" as it isn't necessary for Ruby syntax. Now that we've gotten that minute detail out of the way, let's go ahead and loop through the data. In Ruby, you can iterate through data using the array.each method, so I've included an example of that as well, however if we're talking about looping then perhaps a while loop would be more relevant here.</p>
+      <p>
+        Ruby #1: #.each method
+      </p>
+      <pre>
+          spells.each do |spell|
+            p spell
+          end
+      </pre>
+      <p>The #.each method makes it incredibly easy to print out arrays, as you're literally just saying to print each value. Obviously if you just wanted to print an array this would be much more intuitive than looping, but we're talking about looping so we should probably explain how this would work in a while loop.</p>
+      <p>
+      Ruby #2: While loop
+      </p>
+      <pre>
+          i = 0
+          while i < spells.length
+            p spells[i]
+            i += 1
+          end
+      </pre>
+      <p>Here we have to do a bit more work for this to work: we have to set a counter to 0 (which will behave as our index number), and print each spell in the array starting with index 0. Because the condition says that the loop will run while i is less than spells.length, the loop will end once it prints the final index. What will this look like in JavaScript?</p>
+      <p>JavaScript: For loop</p>
+      <pre>
+          for(var i = 0; i < spells.length; i++) {
+            console.log(spells[i])
+          }
+      </pre>
+      <p>
+        Essentially what JavaScript syntax does for you, is make the counter mechanism separate from the code block that you want executed each loop. The for loop provides three spaces for different statements. The first statement (var i = 0), sets up the counter variable to an indicated value. Here 0 works because we're using it as an index. The second statement (i < spells.length) is exactly what you would indicate in a while loop. It tells the for loop to run while that condition is being met. The last condition (i++), increments the counter by the indicated value each time it loops; i++ is simply JavaScript syntax for i += 1, which we were familiar with in Ruby.
+      </p>
+      <p>
+        Hope that helped bring some insight to how looping syntax differs in Ruby vs. JavaScript. Until next time, Muggles!
+      </p>
+  </article>
+  <hr >
+  <article>
+    <hgroup>  
+      <h2>Blog Archive</h2>
+      </hgroup>
+      <ul>
+        <li> <a href="git.html">Week 1: The Command Line and Git/GitHub</a> </li>
+        <li> <a href="css-concepts.html">Week 3: Border, Margin, + Padding</a> </li>
+        <li> <a href="arrays-hashes.html">Week 4: Arrays, Hashes, Literature Suggestions...</a> </li>
+        <li> <a href="enumerable-methods.html">Week 5: Enumerable Methods ... with a side of cranberry sauce.</a> </li>
+        <li> <a href="ruby-classes.html">Week 6: An insightful look at your virtual life using CLASSES!</a> </li>
+      </ul>
+  </article>
+  <footer id="blogfooter">
+    <hr >
+    Copyright &copy; 2015 Shawn Spears
+      <a href="#"><img class="logo" src="./../imgs/icons/facebook.png" alt="Facebook logo" height="28px" width="28px" /></a>
+      <a href="#"><img class="logo" src="./../imgs/icons/twitter.png" alt="Twitter logo" height="28px" width="28px" /></a>
+      <a href="https://github.com/shawnspears"><img class="logo" src="./../imgs/icons/github.png" alt="Github logo" height="28px" width="28px" /></a>
+      <a href="#"><img class="logo" src="./../imgs/icons/linkedin.png" alt="LinkedIn logo" height="28px" width="28px" /></a>
+  </footer>
+</body>
+</html>
