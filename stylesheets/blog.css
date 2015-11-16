@@ -87,6 +87,12 @@ p {
 	margin-left: 10%;
 	margin-right: 10%;
 }
+pre {
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 10px;
+	background-color: #fafafa;
+}
 ul {
 	margin-left: 10%;
 	margin-right: 10%;
