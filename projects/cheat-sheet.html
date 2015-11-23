@@ -27,7 +27,76 @@
 	<div class="cheatsheet">
 		<div class="arrow-down"></div>
 		<article class="project">
-		<p>Something will appear here, eventually...</p>
+		<div class="column1">
+		<h1 class="cheattitle">Iteration</h1>
+		While Statement <br>
+		Loops in Ruby are used to execute the same block of code a specified number of times. Executes code while conditional is true.
+		<pre>
+while  conditional |do|
+	code 
+end
+		</pre>
+		Until Statement <br>
+		Executes code while conditional is false.
+		<pre>
+until  conditional |do|
+	code 
+end
+		</pre>
+		For Statement <br>
+		Executes code once for each element in expression.
+		<pre>
+for variable [, variable ...] in expression |do|
+	code 
+end
+		</pre>
+		Each Iterator <br>
+		The each iterator returns all the elements of an array or a hash.
+		<pre>
+collection.each do |variable|
+   code
+end
+		</pre>
+		Map Iterator <br>
+		The map method can be used to create a new array based on the original array, but with the values modified by the supplied block:
+		<pre>
+arrray.map do |variable|
+   code
+end
+		</pre>
+		</div>
+		<div class="column2"> 
+		<h1 class="cheattitle">Classes</h1>
+		Defining a Class <br>
+		A class in Ruby always starts with the keyword class followed by the name of the class. The name should always be in initial capitals. The class Customer can be displayed as:
+		<pre>
+class Customer
+end
+		</pre>
+		Variables in Ruby Classes <br>
+		<ul>
+			<li>Local Variables: Local variables are the variables that are defined in a method. Local variables are not available outside the method.</li>
+			<br>
+			<li>Instance Variables: Instance variables are available across methods for any particular instance or object. That means that instance variables change from object to object. Instance variables are preceded by the at sign (@) followed by the variable name.</li>
+			<br>
+			<li>Class Variables: Class variables are available across different objects. A class variable belongs to the class and is a characteristic of a class. They are preceded by the sign @@ and are followed by the variable name.</li>
+			<br>
+			<li>Global Variables: Class variables are not available across classes. If you want to have a single variable, which is available across classes, you need to define a global variable. The global variables are always preceded by the dollar sign ($).</li>
+		</ul>
+		<br>
+		Initialize Method <br>
+		The initialize method is a special type of method, which will be executed when the new method of the class is called with parameters.
+		<pre>
+class Customer
+   def initialize(id, name, addr)
+      @cust_id=id
+      @cust_name=name
+      @cust_addr=addr
+   end
+end
+		</pre>
+
+		</div>
 		</article>
 	</div>
 	<footer>

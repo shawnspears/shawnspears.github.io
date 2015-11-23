@@ -164,6 +164,7 @@ hr {
 }
 .cheatsheet {
 	background-color: #262626;
+	height: 1000px;
 }
 .arrow-down {
 	left: 5%;
@@ -193,4 +194,20 @@ hr {
 	font-family: Merriweather;
 	margin: 50px;
 	font-size: 14px;
+}
+.column1 {
+	background-color: #262626;
+	float: left;
+	width: 40%;
+	left: 5%
+}
+
+.column2 {
+	background-color: #262626;
+	float: right;
+	width: 40%;
+	right: 5%;
+}
+pre {
+	background-color: #292929;
 }
