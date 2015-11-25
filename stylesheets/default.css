@@ -163,6 +163,7 @@ hr {
 	height: 150px;
 }
 .cheatsheet {
+	display: none;
 	background-color: #262626;
 	height: 1000px;
 }
