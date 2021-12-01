@@ -1,7 +1,23 @@
 :root {
     --indigo: #1773FF;
+    --light-grey: #f0f0f0;
+}
+
+body {
+    position: relative;
 }
 
 .brand {
     color: var(--indigo);
+}
+
+.about-me {
+    background-color: var(--light-grey);
+    font-size: 1.15rem;
+}
+
+@media (max-width: 414px) {
+    .graphic-1 {
+        display: none;
+    }
 }
