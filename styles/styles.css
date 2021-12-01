@@ -1,0 +1,7 @@
+:root {
+    --indigo: #1773FF;
+}
+
+.brand {
+    color: var(--indigo);
+}
